@@ -1,0 +1,30 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:not(:last-child) {
+margin-right: 10px;
+}
+
+.button {
+min-width: 100px;
+padding: 10px;
+cursor: pointer;
+outline: none;
+border-radius: 6px;
+border-color: #32a895;
+color: #32a895;
+text-transform: uppercase;
+transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover, .button:focus {
+background-color: #32a895;
+border: none;
+color: #fff;
+}
